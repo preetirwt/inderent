@@ -784,7 +784,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 100vh;
+  min-height: 120vh;
   position: relative;
   padding: 0;
   display: flex;
@@ -1223,7 +1223,7 @@ section,
 # Alt Services Section
 --------------------------------------------------------------*/
 .alt-services {
-	padding-top: 23em;
+	padding-top: 24em;
 }
 
 .alt-services .features-image {
@@ -1309,6 +1309,7 @@ section,
 
 .f-15 {
 	font-size: 15px;
+	text-align:justify;
 }
 
 /*--------------------------------------------------------------
@@ -2007,17 +2008,37 @@ section,
   overflow: hidden;
   position: relative;
 }
+@media (max-width: 1400px) {  
 
+.award-section {
+	top: 38em;
+    }
+  .alt-services {
+    padding-top: 12em;
+  }
+}
+
+@media (max-width: 1200px) { 
+
+.award-section {
+	top: 37em;
+    width: 96%;
+  }
+  .alt-services {
+    padding-top: 15em;
+  }
+}
 @media (max-width: 1024px) {
+	
   .team .member .member-img {
     margin: 0 60px;
   }
   .award-section {
-	top: 28em;
+	top: 34em;
     width: 94%;
   }
   .alt-services {
-    padding-top: 18em;
+    padding-top: 11em;
   }
   .award-img {
 	width: 85%;
@@ -2028,13 +2049,27 @@ section,
 	}
 }
 
+@media (max-width: 992px) {
+	.award-section {
+	top: 32em;
+	margin: 0 1em;
+	width: 97%;
+  }
+  .alt-services {
+    padding-top: 9em;
+  }
+}
+
 @media (max-width: 768px) {
-  
+  .hero {
+  width: 100%;
+  min-height: 60vh;
+  }
   .award-section {
 	top: 22em;
   }
   .alt-services {
-    padding-top: 10em;
+    padding-top: 22em;
   }
   .award-img {
 	width: 100%;
@@ -2047,15 +2082,28 @@ section,
     font-size: 1.6em;
     }
 }
-
-@media (max-width: 425px) {
-  
-  .award-section {
-	top: 12em;
+@media (max-width: 576px) {
+	.award-section {
+	top: 18em;
 	margin: 0 1em;
   }
   .alt-services {
-    padding-top: 0em;
+    padding-top: 17em;
+  }
+}
+
+@media (max-width: 425px) {
+  .hero {
+  width: 100%;
+  min-height: 47vh;
+  }
+  .award-section {
+	top: 14em;
+	margin: 0 1em;
+	width: 93%;
+  }
+  .alt-services {
+    padding-top: 6em;
   }
   .award-text {
     top: 12em;
@@ -3451,6 +3499,7 @@ tr.sticky {
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
+	z-index:2;
 }
 
 @keyframes pulse {
