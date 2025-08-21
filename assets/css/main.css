@@ -2081,6 +2081,10 @@ section,
     width: 100%;
     font-size: 1.6em;
     }
+	
+.section-title h2:before, .section-title h2:after {
+	display:none;
+}
 }
 @media (max-width: 576px) {
 	.award-section {
